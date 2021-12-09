@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNamespace>Inventory_system</RootNamespace>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Fonts" />
+      <Folder Include="MVVM\Model\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="MVVM\View\HomeView - Copy.xaml.cs">
+        <SubType>Code</SubType>
+        <DependentUpon>HomeView.xaml.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
